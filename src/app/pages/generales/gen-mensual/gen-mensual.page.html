@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reporte mensual</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+		<ion-item>
+			<ion-icon name="calendar" item-start></ion-icon>
+  			<ion-label>Mes/Año</ion-label>
+  			<ion-datetime [(ngModel)]="fecha" displayFormat="YYYY-MM"  placeholder="Seleccione Fecha"></ion-datetime>
+		</ion-item>
+		<ion-item>
+			<ion-button expand="full" (click)="enviar_fecha()">Enviar fecha
+			</ion-button>
+		</ion-item>
+    </ion-list>
+</ion-content>

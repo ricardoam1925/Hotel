@@ -1,0 +1,32 @@
+
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reporte de depósitos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+              <ion-item routerLink = '/dep-diario'>
+                  <ion-icon slot="start" name = "document"></ion-icon>
+                  <ion-label>
+                    Reporte diario
+                  </ion-label>
+              </ion-item>
+              <ion-item routerLink = '/dep-mensual'>
+                  <ion-icon slot="start" name = "document"></ion-icon>
+                  <ion-label>
+                    Reporte mensual
+                  </ion-label>
+              </ion-item>
+              <ion-item routerLink = '/dep-especifico'>
+                  <ion-icon slot="start" name = "document"></ion-icon>
+                  <ion-label>
+                    Reporte específico
+                  </ion-label>
+              </ion-item>
+  </ion-list>
+</ion-content>
