@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+              <ion-item *ngFor="let u of users" [routerLink] ="['/individual-diario', u.id]" >
+                <ion-icon slot="start" name = "person"></ion-icon>
+                <ion-label>
+                  {{u.id}} {{u.nombre}} {{u.apellido}}
+                </ion-label>
+              </ion-item>
+  </ion-list>
+</ion-content>

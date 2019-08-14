@@ -41,6 +41,11 @@ export class AppComponent {
       title: 'General',
       url: '/generales',
       icon: 'clipboard'
+    },
+      {
+      title: 'Individual',
+      url: '/individual',
+      icon: 'person'
     }
   ];
 

@@ -39,6 +39,16 @@ const routes: Routes = [
   { path: 'general-diario/:fecha', loadChildren: './pages/generales/general-diario/general-diario.module#GeneralDiarioPageModule' },
   { path: 'general-especifico/:fecha_i/:fecha_f', loadChildren: './pages/generales/general-especifico/general-especifico.module#GeneralEspecificoPageModule' },
   { path: 'general-mensual/:fecha', loadChildren: './pages/generales/general-mensual/general-mensual.module#GeneralMensualPageModule' },
+  { path: 'individual', loadChildren: './pages/individual/individual.module#IndividualPageModule' },
+  { path: 'indiv-diario', loadChildren: './pages/individual/indiv-diario/indiv-diario.module#IndivDiarioPageModule' },
+  { path: 'indiv-mensual', loadChildren: './pages/individual/indiv-mensual/indiv-mensual.module#IndivMensualPageModule' },
+  { path: 'indiv-especifico', loadChildren: './pages/individual/indiv-especifico/indiv-especifico.module#IndivEspecificoPageModule' },
+  { path: 'individual-diario/:id', loadChildren: './pages/individual/individual-diario/individual-diario.module#IndividualDiarioPageModule' },
+  { path: 'individual-mensual/:ide/:fecha', loadChildren: './pages/individual/individual-mensual/individual-mensual.module#IndividualMensualPageModule' },
+  { path: 'individual-especifico/:ide/:fecha_i/:fecha_f', loadChildren: './pages/individual/individual-especifico/individual-especifico.module#IndividualEspecificoPageModule' },
+  { path: 'usuario-diario/:fecha', loadChildren: './pages/individual/indiv-diario/usuario-diario/usuario-diario.module#UsuarioDiarioPageModule' },
+  { path: 'usuario-mensual/:fecha', loadChildren: './pages/individual/indiv-mensual/usuario-mensual/usuario-mensual.module#UsuarioMensualPageModule' },
+  { path: 'usuario-especifico/:fecha_i/:fecha_f', loadChildren: './pages/individual/indiv-especifico/usuario-especifico/usuario-especifico.module#UsuarioEspecificoPageModule' },
   
 ];
 

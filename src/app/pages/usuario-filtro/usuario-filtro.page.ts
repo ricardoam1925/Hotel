@@ -15,6 +15,7 @@ export class UsuarioFiltroPage implements OnInit {
 
   ngOnInit() {
   	this.argumento = this.activatedRouter.snapshot.paramMap.get('id');
+    
   	this.usuarioFiltroService.getUser(this.argumento).subscribe(usuario => {console.log(usuario); this.user = usuario;});
   
   }

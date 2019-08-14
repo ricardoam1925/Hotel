@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GeneralService } from '../../../services/general.service';
 import { General } from '../../../interfaces/General';
+
 @Component({
   selector: 'app-general-diario',
   templateUrl: './general-diario.page.html',
