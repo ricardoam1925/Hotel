@@ -9,7 +9,7 @@ import { Gasto } from '../../../interfaces/Gasto';
 })
 export class GastoEspecificoPage implements OnInit {
 
-  constructor(private activatedRouter: ActivatedRoute, private depositoService :GastoService) { }
+  constructor(private activatedRouter: ActivatedRoute, private gastoService :GastoService) { }
    fech_inicial = null;
   fech_final = null;
 	public gast = null;
@@ -17,7 +17,7 @@ export class GastoEspecificoPage implements OnInit {
   ngOnInit() {
   	this.fech_inicial = this.activatedRouter.snapshot.paramMap.get('fecha_i');
   	this.fech_final= this.activatedRouter.snapshot.paramMap.get('fecha_f');
-  	this.depositoService.getGastoEspecifico(this.fech_inicial, this.fech_final).subscribe(deposito => {console.log(deposito); this.gast = deposito;});
+  	this.gastoService.getGastoEspecifico(this.fech_inicial, this.fech_final).subscribe(deposito => {console.log(deposito); this.gast = deposito;});
 
   }
 

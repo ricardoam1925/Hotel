@@ -26,6 +26,12 @@ export class AppComponent {
       icon: 'person'
     },
 
+    {
+      title: 'Habitaciones',
+      url: '/habitacion',
+      icon: 'bed'
+    },
+
      {
       title: 'Depositos',
       url: '/depositos',
@@ -35,7 +41,7 @@ export class AppComponent {
     {
       title: 'Gastos',
       url: '/gastos',
-      icon: 'clipboard'
+      icon: 'calculator'
     },
      {
       title: 'General',
@@ -46,6 +52,16 @@ export class AppComponent {
       title: 'Individual',
       url: '/individual',
       icon: 'person'
+    },
+     {
+      title: 'Compras',
+      url: '/factura-compra',
+      icon: 'basket'
+    },
+     {
+      title: 'Ventas',
+      url: '/factura-venta',
+      icon: 'logo-usd'
     }
   ];
 

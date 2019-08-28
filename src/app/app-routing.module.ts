@@ -49,6 +49,23 @@ const routes: Routes = [
   { path: 'usuario-diario/:fecha', loadChildren: './pages/individual/indiv-diario/usuario-diario/usuario-diario.module#UsuarioDiarioPageModule' },
   { path: 'usuario-mensual/:fecha', loadChildren: './pages/individual/indiv-mensual/usuario-mensual/usuario-mensual.module#UsuarioMensualPageModule' },
   { path: 'usuario-especifico/:fecha_i/:fecha_f', loadChildren: './pages/individual/indiv-especifico/usuario-especifico/usuario-especifico.module#UsuarioEspecificoPageModule' },
+  { path: 'factura-venta', loadChildren: './pages/factura-venta/factura-venta.module#FacturaVentaPageModule' },
+  { path: 'facc-diario', loadChildren: './pages/factura-venta/facc-diario/facc-diario.module#FaccDiarioPageModule' },
+  { path: 'facc-especifico', loadChildren: './pages/factura-venta/facc-especifico/facc-especifico.module#FaccEspecificoPageModule' },
+  { path: 'facc-mensual', loadChildren: './pages/factura-venta/facc-mensual/facc-mensual.module#FaccMensualPageModule' },
+  { path: 'facturac-diario/:fecha', loadChildren: './pages/factura-venta/facturac-diario/facturac-diario.module#FacturacDiarioPageModule' },
+  { path: 'facturac-especifico/:fecha_i/:fecha_f', loadChildren: './pages/factura-venta/facturac-especifico/facturac-especifico.module#FacturacEspecificoPageModule' },
+  { path: 'facturac-mensual/:fecha', loadChildren: './pages/factura-venta/facturac-mensual/facturac-mensual.module#FacturacMensualPageModule' },
+  
+  { path: 'factura-compra', loadChildren: './pages/factura-compra/factura-compra.module#FacturaCompraPageModule' },
+  { path: 'fac-diario', loadChildren: './pages/factura-compra/fac-diario/fac-diario.module#FacDiarioPageModule' },
+  { path: 'fac-especifico', loadChildren: './pages/factura-compra/fac-especifico/fac-especifico.module#FacEspecificoPageModule' },
+  { path: 'fac-mensual', loadChildren: './pages/factura-compra/fac-mensual/fac-mensual.module#FacMensualPageModule' },
+  { path: 'factura-compra-diario/:fecha', loadChildren: './pages/factura-compra/factura-compra-diario/factura-compra-diario.module#FacturaCompraDiarioPageModule' },
+  { path: 'factura-compra-especifico/:fecha_i/:fecha_f', loadChildren: './pages/factura-compra/factura-compra-especifico/factura-compra-especifico.module#FacturaCompraEspecificoPageModule' },
+  //{ path: 'factura-compra-mensual/:fecha', loadChildren: './pages/factura-compra/factura-compra-mensual/factura-compra-mensual.module#FacturaCompraMensualPageModule' },
+  { path: 'compra-mensual/:fecha', loadChildren: './pages/factura-compra/compra-mensual/compra-mensual.module#CompraMensualPageModule' },
+  { path: 'habitacion', loadChildren: './pages/habitacion/habitacion.module#HabitacionPageModule' },
   
 ];
 

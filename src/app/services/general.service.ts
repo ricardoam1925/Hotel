@@ -9,7 +9,7 @@ export class GeneralService {
   constructor(public http : HttpClient,) { }
 
   getGeneralDiario(fecha: string){
-  	const path = 'http://localhost:8080/Sofhotel1.1/server.php/api/report_general_diario/' +fecha;
+  	const path = 'http://localhost:8080/Sofhotel/server.php/api/report_general_diario/' +fecha;
   	return this.http.get<General[]>(path);
   }
 

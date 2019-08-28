@@ -13,28 +13,28 @@ export class UsuarioService {
   	) { }
 
  getAllUsers(){
-  	const path = 'http://localhost:8080/Sofhotel1.1/server.php/api/usuario_api_report';
+  	const path = 'http://localhost:8080/Sofhotel/server.php/api/usuario_api_report';
   	return this.http.get<Usuario[]>(path);
   }
 
 
   getUsuariosDiario(fecha : string){
-  	const path = 'http://localhost:8080/Sofhotel1.1/server.php/api/consult_caja_usuario_dia/' + fecha;
+  	const path = 'http://localhost:8080/Sofhotel/server.php/api/consult_caja_usuario_dia/' + fecha;
   	return this.http.get<Usuario[]>(path);
    }
 
    getReporteUsuarioDiario(id : string){
-   		const path = 'http://localhost:8080/Sofhotel1.1/server.php/api/report_usuario_diario/' + id;
+   		const path = 'http://localhost:8080/Sofhotel/server.php/api/report_usuario_diario/' + id;
   	return this.http.get<Individual[]>(path);
    }
 
    getReporteUsuarioMensual(id : string, fecha : string){
-       const path = 'http://localhost:8080/Sofhotel1.1/server.php/api/report_usuario_mes/' + id + '/' + fecha;
+       const path = 'http://localhost:8080/Sofhotel/server.php/api/report_usuario_mes/' + id + '/' + fecha;
     return this.http.get<Individual[]>(path);
    }
 
    getReporteUsuarioEspecifico(id : string, fecha_inicial : string, fecha_final :string){
-     const path = 'http://localhost:8080/Sofhotel1.1/server.php/api/report_usuario_especifico/' + id + '/' + fecha_inicial + '/' + fecha_final ;
+     const path = 'http://localhost:8080/Sofhotel/server.php/api/report_usuario_especifico/' + id + '/' + fecha_inicial + '/' + fecha_final ;
     return this.http.get<Individual[]>(path);
    }
 
