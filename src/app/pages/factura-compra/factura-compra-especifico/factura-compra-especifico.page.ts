@@ -13,10 +13,12 @@ export class FacturaCompraEspecificoPage implements OnInit {
 	fech_inicial = null;
   	fech_final = null;
 	public fcompra = null;
+  facompra = null;
+  total = null;
   ngOnInit() {
   	this.fech_inicial = this.activatedRouter.snapshot.paramMap.get('fecha_i');
   	this.fech_final= this.activatedRouter.snapshot.paramMap.get('fecha_f');
-  	this.facturacompraService.getFacturaCompraEspecifico(this.fech_inicial, this.fech_final).subscribe(factura_compra => {console.log(factura_compra); this.fcompra = factura_compra;});
+  	this.facturacompraService.getFacturaCompraEspecifico(this.fech_inicial, this.fech_final).subscribe(factura_compra => {console.log(factura_compra); this.facompra = factura_compra; this.fcompra = this.facompra[0]; this.total = this.facompra[1]});
 
   }
 

@@ -3,7 +3,7 @@
   	<ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Ricardo</ion-title>
+    <ion-title>Datos de usuario</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,7 +12,10 @@
               <ion-item *ngFor="let u of user">
                 <ion-icon slot="start" name = "person"></ion-icon>
                 <ion-label>
-                  {{u.id}} {{u.nombre}} {{u.apellido}}
+                  Nombres: {{u.nombre}} <br>
+                  Apellidos: {{u.apellido}}<br>
+                  Cédula: {{u.cedula}}<br>
+                  Usuario: {{u.usuario}}<br>
                 </ion-label>
               </ion-item>
   </ion-list>

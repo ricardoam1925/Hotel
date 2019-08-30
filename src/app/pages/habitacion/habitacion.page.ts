@@ -10,7 +10,7 @@ export class HabitacionPage implements OnInit {
 	public general = null;
 	public habitacion = null;
 	public totales = null;
-
+  public i = 0;
   constructor( private habitacionService : HabitacionService) { }
 
   ngOnInit() {

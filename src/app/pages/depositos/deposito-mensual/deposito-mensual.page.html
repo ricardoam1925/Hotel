@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>deposito-mensual</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{fech}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item *ngFor="let d of dep">
+                <ion-icon slot="start" name = "cash"></ion-icon>
+                <ion-label>
+                  <b>Destino:</b> {{d.nombre}} <br>
+                  <b>Entidad:</b> {{d.entidad}}<br>
+                  <b>Cuenta:</b> {{d.num_cta}}<br>
+                  <b>Descripción:</b> {{d.motivo}}<br>
+                  <b>Monto:</b> {{d.monto}}<br>
+                  <b>Fecha:</b> {{d.created_at}}<br>
+                </ion-label>
+              </ion-item>
 </ion-content>

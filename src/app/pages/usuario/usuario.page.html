@@ -10,10 +10,14 @@
 
 <ion-content>
   <ion-list >
-              <ion-item *ngFor="let u of users" [routerLink] ="['/usuario-filtro', u.id]" >
+              <ion-item *ngFor="let u of users">
                 <ion-icon slot="start" name = "person"></ion-icon>
                 <ion-label>
-                  {{u.id}} {{u.nombre}} {{u.apellido}}
+                  <b>Nombres:</b> {{u.nombre}} <br>
+                  <b>Apellidos:</b> {{u.apellido}}<br>
+                  <b>Cédula:</b> {{u.cedula}}<br>
+                  <b>Usuario:</b> {{u.usuario}}<br>
+                  <b>Email:</b> {{u.email}}<br>
                 </ion-label>
               </ion-item>
   </ion-list>

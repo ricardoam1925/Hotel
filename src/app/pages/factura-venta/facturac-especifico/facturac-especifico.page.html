@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>facturac-especifico</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{fech_inicial}}/{{fech_final}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+   <ion-item *ngFor="let h of habitacion; let indice = index">
+                <ion-icon slot="start" name = "bed"></ion-icon>
+                <div float-left>
+                    <b>Número de habitación: </b>
+                    {{h.numero_habitacion}}<br>
+                    <b>Tipo: </b>
+                    {{h.tipo_habitacion}}<br>
+                    <b>Ingreso:</b>
+                    {{totalxhab[indice]}} 
+                </div>
+              </ion-item>
+    <ion-item>
+                <ion-icon slot="start" name = "cash"></ion-icon>
+                <ion-label>
+                  <b>Total ventas: {{total}}</b>
+                </ion-label>
+              </ion-item>
 </ion-content>

@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>gasto_diario</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{fech}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item *ngFor="let g of gast">
+                <ion-icon slot="start" name = "calculator"></ion-icon>
+                <ion-label>
+                  <b>Usuario:</b> {{g.nombre}} {{g.apellido}}  <br>
+                  <b>Descripción:</b> {{g.descripcion}}<br>
+                  <b>Total:</b> {{g.gasto_total}}<br>
+                </ion-label>
+              </ion-item>
 </ion-content>

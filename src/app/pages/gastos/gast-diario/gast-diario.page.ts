@@ -32,7 +32,7 @@ export class GastDiarioPage implements OnInit {
       this.crear_alerta();   
        }else{
   	 	this.date = this.datePipe.transform(this.fecha,"yyyy-MM-dd");
-  		this.router.navigate(['/facturac-diario', this.date]);
+  		this.router.navigate(['/gasto-diario', this.date]);
 
   		//this.router.navigateByUrl(`/deposito-diario/${ this.date }`);
     }

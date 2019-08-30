@@ -10,11 +10,13 @@ import { FacturaCompra } from '../../../interfaces/factura-compra';
 export class CompraMensualPage implements OnInit {
 	 fech = null;
   fcompra = null;
+  facompra = null;
+  total = null;
   constructor(private activatedRouter: ActivatedRoute, private facturacompraService : FacturaCompraService) { }
  
   ngOnInit() {
   	this.fech = this.activatedRouter.snapshot.paramMap.get('fecha');
-  	this.facturacompraService.getFacturaCompraMensual(this.fech).subscribe(factura => {console.log(factura); this.fcompra = factura;});
+  	this.facturacompraService.getFacturaCompraMensual(this.fech).subscribe(factura_compra => {console.log(factura_compra); this.facompra = factura_compra; this.fcompra = this.facompra[0]; this.total = this.facompra[1]});
   	console.log(this.fcompra);
   }
 

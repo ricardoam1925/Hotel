@@ -1,9 +1,27 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Habitaciones disponibles</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Habitaciones Disponibles</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  
+  <ion-list >
+              <ion-item *ngFor="let h of habitacion; let indice = index">
+                <ion-icon slot="start" name = "bed"></ion-icon>
+                <div float-left>
+                    <b>Número de habitación: </b>
+                    {{h.numero_habitacion}}<br>
+                    <b>Estado: </b>
+                    {{h.estado}}<br>
+                    <b>Ingreso:</b>
+                    {{totales[indice]}} 
+                </div>
+              </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-label>
+                
