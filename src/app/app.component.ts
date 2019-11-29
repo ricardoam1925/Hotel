@@ -16,16 +16,10 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
       title: 'Usuarios',
       url: '/usuario',
       icon: 'person'
     },
-
     {
       title: 'Habitaciones',
       url: '/habitacion',

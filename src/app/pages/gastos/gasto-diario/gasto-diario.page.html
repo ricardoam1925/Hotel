@@ -1,19 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{fech}}</ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Gasto Mensual</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item *ngFor="let g of gast">
-                <ion-icon slot="start" name = "calculator"></ion-icon>
-                <ion-label>
-                  <b>Usuario:</b> {{g.nombre}} {{g.apellido}}  <br>
-                  <b>Descripción:</b> {{g.descripcion}}<br>
-                  <b>Total:</b> {{g.gasto_total}}<br>
-                </ion-label>
-              </ion-item>
+    <ion-list *ngFor="let g of gast">
+        <ion-item-group >
+          <ion-item-divider color="secondary" >
+            <ion-label >{{g.descripcion}}</ion-label>
+          </ion-item-divider>
+          <ion-item>
+            <ion-label>Pago: ${{g.gasto_total}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Usuario: {{g.user}}</ion-label>
+          </ion-item>
+        </ion-item-group>
+            </ion-list>
 </ion-content>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "factura-venta.page.scss"
+    ],
+    "names": [],
+    "file": "factura-venta.page.css"
+}

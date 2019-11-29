@@ -7,15 +7,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-	<ion-item *ngFor="let d of dep">
-                <ion-icon slot="start" name = "cash"></ion-icon>
-                <ion-label>
-                  <b>Destino:</b> {{d.nombre}} <br>
-                  <b>Entidad:</b> {{d.entidad}}<br>
-                  <b>Cuenta:</b> {{d.num_cta}}<br>
-                  <b>Descripción:</b> {{d.motivo}}<br>
-                  <b>Monto:</b> {{d.monto}}<br>
-                </ion-label>
-              </ion-item>
+<ion-content >
+  <ion-list *ngFor="let deposito of dep">
+    <ion-item-divider color="success" >
+        <ion-label>{{deposito.entidad}}</ion-label>
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>{{deposito.motivo}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{deposito.nombre}} / {{deposito.num_cta}}</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-label>Tipo de cuenta: {{deposito.tp_descripcion}}</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Monto: ${{deposito.monto}}</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label>Responsable: {{deposito.nombre_usuario}}</ion-label>
+            </ion-item>
+ 
+  </ion-list>
 </ion-content>
+

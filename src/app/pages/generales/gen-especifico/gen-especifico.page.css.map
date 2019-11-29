@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "gen-especifico.page.scss"
+    ],
+    "names": [],
+    "file": "gen-especifico.page.css"
+}

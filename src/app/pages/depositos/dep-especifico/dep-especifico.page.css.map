@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "dep-especifico.page.scss"
+    ],
+    "names": [],
+    "file": "dep-especifico.page.css"
+}

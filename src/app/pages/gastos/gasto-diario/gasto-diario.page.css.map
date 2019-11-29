@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "gasto-diario.page.scss"
+    ],
+    "names": [],
+    "file": "gasto-diario.page.css"
+}
