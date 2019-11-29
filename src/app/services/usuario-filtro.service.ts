@@ -11,6 +11,7 @@ export class UsuarioFiltroService {
 
   getUser(id : string){
   	const path = 'http://localhost:8080/Sofhotel/server.php/api/usuario_api_filtro/' + id;
+  //	const path = 'http://localhost:8000/Sofhotel/api/usuario_api_filtro/' + id;
   	return this.http.get<Usuario[]>(path);
    }
 }

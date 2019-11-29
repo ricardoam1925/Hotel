@@ -10,6 +10,7 @@ export class HabitacionService {
   constructor(public http : HttpClient,) { }
   getHabitacion(){
   	const path = 'http://localhost:8080/Sofhotel/server.php/api/report_habitacion/';
+  	//const path = 'http://localhost:8000/Sofhotel/api/report_habitacion/';
   	return this.http.get<Habitacion[]>(path);
   }
 }
