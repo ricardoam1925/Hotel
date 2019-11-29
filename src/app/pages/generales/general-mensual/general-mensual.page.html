@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>general-mensual</ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Reporte General Mensual</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-list *ngFor="let ge of generate">
+        <ion-item-group >
+          <ion-item-divider color="secondary" >
+            <ion-label >{{ge.totalCompra}}</ion-label>
+          </ion-item-divider>
+          <ion-item>
+            <ion-label>depositos: ${{ge.totalDepositos}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>egresos: {{ge.totalEgresos}}</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label>ventas: {{ge.totalVentas}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>utilidad: {{ge.utilidad}}</ion-label>
+              </ion-item>
+        </ion-item-group>
+     </ion-list>
 </ion-content>
